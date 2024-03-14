@@ -5,9 +5,7 @@ class Solution:
         
         list1 = [0] * (n + 1)  # Initialize list1 with zeros
         maxalt = list1[0]
-        list1[1] = gain[0]
-        maxalt = max(maxalt, list1[1])
-        for i in range(1, n):
+        for i in range(n):
             list1[i+1] = list1[i] + gain[i]
             maxalt = max(maxalt, list1[i+1])
         return maxalt
