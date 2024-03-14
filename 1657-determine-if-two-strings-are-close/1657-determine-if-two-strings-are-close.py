@@ -10,6 +10,6 @@ class Solution:
         for char in word2:
             dict2[char] = dict2.get(char,0)+1
         
-        if dict1.keys() != dict2.keys():
+        if set(dict1.keys()) != set(dict2.keys()):
             return False
         return sorted(dict1.values()) == sorted(dict2.values())
