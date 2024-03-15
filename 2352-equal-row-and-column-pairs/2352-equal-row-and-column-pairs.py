@@ -17,4 +17,3 @@ class Solution:
                 if grid[j] == collist[k]:
                     count += 1
         return count
-                
