@@ -1,8 +1,6 @@
 class Solution:
     def kLengthApart(self, nums: List[int], k: int) -> bool:
         list1 = []
-        c = 0
-        
         for i,j in enumerate(nums):
             if j == 1:
                 list1.append(i)
